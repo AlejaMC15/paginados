@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-size: 16px;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.header {
+    background: purple;
+    height: 3rem;
+}
+
+.container {
+    background: rgb(206, 97, 216);
+    display: flex;
+    height: inherit;
+}
+
+.content {
+    background: rgb(67, 200, 209);
+    flex: 1;
+}
+
+.aside {
+    background: yellow;
+    flex: 0 0 25%;
+}
+
+.footer {
+    background: blueviolet;
+    height: 6rem;
+    margin-top: auto;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    list-style: none;
+    flex: 1;
+    outline: 1px solid red;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .10s;
+}
+
+.menu-item:hover {
+    flex: 8;
+}
+
